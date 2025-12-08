@@ -54,7 +54,7 @@ import DocumentService from '@typo3/core/document-service.js';
                 // Add event handles to update BE_USERs->uc when collapse/show is used
                 // The CE is expanded again
                 document.querySelector(btn.dataset.bsTarget).addEventListener('show.bs.collapse', () => {
-                    // Persistent.removeFromList('B13.Collapse', btn.dataset.b13Collapse);
+                    Persistent.removeFromList('B13.Collapse', btn.dataset.b13Collapse);
                     substituteNode.classList.add('d-none');
                 });
                 // The CE is about to be collapsed
